@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>More on selectors</title>
+
+<style>
+    h1{
+        background-color: rgb(75, 82, 145);
+        color: rgb(221, 215, 215);
+        font-weight: bold;
+        text-align: center;
+    }
+
+    /* @----- if [div->li->p] ----- */
+    /* div li p{
+        color: rgb(255, 255, 147);
+        background-color: green;
+        font-weight: bold;
+    } */
+
+    /* @----- if p is DIRECT CHILDREN of div ----- */
+    /* div > p{
+        color: rgb(238, 238, 125);
+        background-color: green;
+        font-weight: bold;
+    } */
+
+    /* @----- if p is right after div i.e p is very next sibling of div----- */
+    div + p{
+        color: white;
+        background-color: rgb(238, 137, 137);
+    }
+</style>
+</head>
+
+<body>
+    <h1>This is more on selectors</h1>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li class="item"><p>This paragraph inside li.</p></li> 
+                <li>This will not get affected.</li>
+                <p>This is para inside ul.</p>
+            </ul>
+            <p>This is 1st div paragraph.</p>
+        </div>
+        <!-- -- -->
+        <p>This is 2nd's div paragraph.</p>
+    </div>
+    <!-- ---- -->
+    <p>This is outermost paragraph.</p>
+</body>
+</html>
+
