@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javaScript tutorial</title>
+
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .container{
+            border: 2px solid blue;
+            background: lightblue;
+            margin: 3px 0px;
+            padding: 9px;
+        }
+        .bg-primary{
+            background-color: blueviolet;
+        }
+        .txt-success{
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Class can be on MULTIPLE element, ID on ONE element -->
+    <h1>Welcome to my javaScript tutorial</h1>
+    <div id="first_container" class="container">
+        <button id="click" onclick="clicked()">Click Me</button>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, labore.</p>
+    </div>
+    <div class="container">
+        <p>This is paragraph</p>
+    </div>
+
+    <!-- -----ARIA----- -->
+    <div role="checkbox"
+        aria-checked="true">
+        Recieve promotional offer
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
