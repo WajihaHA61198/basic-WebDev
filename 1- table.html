@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+
+    <!-- https://www.w3schools.com/html/html_table_sizes.asp -->
+    <!-- responsive -->
+    <style>
+        *{
+            margin: auto;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse; /* to avoid double border */
+            padding: 4px;
+            background-color: #96D4D4;
+            /* border-radius: 10px; */
+        }
+
+        @media screen and (max-width:450px) {
+            table, thead, tbody, th, td, tr{
+                display: block; 
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!--<table> ->	Defines a table
+        <th>	->  Defines a header cell in a table
+        <tr>	->  Defines a row in a table
+        <td>	->  Defines a cell in a table
+        <thead>	->  Groups the header content in a table
+        <tbody>	->  Groups the body content in a table
+        <tfoot>	->  Groups the footer content in a table -->    
+    <table>
+        <thead>
+
+        </thead>
+        <!-- --- -->
+        <tbody>
+            <tr>
+                <td data-th="Team">Toronto</td>
+                <td data-th="1st">0</td>
+                <td data-th="2nd">0</td>
+                <td data-th="3rd">0</td>
+                <td data-th="4th">1</td>
+                <td data-th="5th">2</td>
+                <td data-th="6th">0</td>
+                <td data-th="7th">0</td>
+                <td data-th="8th">1</td>
+                <td data-th="9th">0</td>
+                <td data-th="final">4</td>
+            </tr>
+            <tr>
+                <td data-th="Team">San Fransisco</td>
+                <td data-th="1st">0</td>
+                <td data-th="2nd">0</td>
+                <td data-th="3rd">0</td>
+                <td data-th="4th">1</td>
+                <td data-th="5th">2</td>
+                <td data-th="6th">0</td>
+                <td data-th="7th">0</td>
+                <td data-th="8th">1</td>
+                <td data-th="9th">0</td>
+                <td data-th="final">4</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

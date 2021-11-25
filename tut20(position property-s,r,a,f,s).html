@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css position property</title>
+
+    <!-- css position(5): static(default), relative, absolute, fixed, sticky  -->
+    <style>
+        .container{
+            border: 5px solid rebeccapurple;
+            background-color: khaki;
+            height: 3444px;
+        }
+        .box {
+            border: 2px solid red;
+            width: 150px;
+            height: 150px;
+            margin: 2px;
+            display: inline-block;
+            /* display: inline; */
+        }
+        #box2{
+            /* 1@ RELATIVE: relative to it's normal position + can use tblr + if WANT space in old place */
+            /* position: relative; */
+            /* top: 30px;
+               left: 30px; */
+
+
+            /* @--ABSOLUTE: relative to position of it's first parent + if want NO space in old place */
+            /* position: absolute; */
+
+
+            /* @FIXED: relative to browser window +  use for chat purpose */
+            /* position: fixed;
+               right: 10px;
+               bottom: 2px; */
+
+               
+            /* @STICKY: stick to the screen + use for menu*/
+            position: sticky;
+            top: 3px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">chat with us </div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+    </div>
+</body>
+</html>

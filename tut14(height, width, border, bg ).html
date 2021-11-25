@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Height, width, border & background</title>
+
+    <style>
+        #para{
+            background-color: rgb(210, 230, 165);
+            height: 100px;
+            width: 300px;
+            border: 2px solid steelblue !important;
+            border-radius: 5px;   
+        }
+        #para2{
+            background-color: rgb(229, 145, 229);
+            height: 100px;
+            width: 300px;
+            /* border-radius: 5px;  */
+            /* --Border color */
+            border-top: 5px solid rgb(56, 71, 134);
+            border-left: 3px solid rgb(185, 218, 108);
+            border-right:  6px solid red;
+            border-bottom: 1px solid black;
+
+            /* --Border radius */
+            border-top-right-radius: 9px; 
+            border-top-left-radius: 5px;
+            border-bottom-right-radius: 2px;
+            border-bottom-left-radius: 4px;
+       }
+       #para3{
+            height: 300px;
+            width: 500px;
+            background-image: url('https://www.codewithharry.com/static/home/img/photo.png');
+            border: 3px solid red;    
+            background-repeat: no-repeat; /*repeat in x and y, will make it repeat in x & y axis*/ 
+            background-position: center center; 
+            /* top, bottom, left, right --tblr */
+            /* background-position: 19px 90px;  */
+            /* background-position: right bottom ;  */
+        }
+    </style>
+</head>
+
+<body>
+    <h3>heading</h3>
+    <p id=para>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, mollitia.</p>
+
+    <h3>heading</h3>
+    <p id=para2>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, mollitia.</p>
+
+    <h3>heading</h3>
+    <p id=para3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, mollitia.</p>
+</body>
+</html>

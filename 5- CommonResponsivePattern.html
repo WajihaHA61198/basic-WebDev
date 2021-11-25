@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comment Responsive pattern</title>
+
+    <style>
+        *{
+            background: rgb(236, 236, 236);
+        }
+
+        html, body, main {
+            height: 100%;
+            width: 100%;
+        }
+
+        .container{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .box{
+            min-height: 125px;
+            width: 100%;
+        }
+        /* -- */
+        .darkblue{
+            background-color: rgb(0, 0, 129);
+            /* order: 4; */
+        }
+        .lightblue{
+            background-color: rgb(37, 67, 235);
+            /* order: -1; */
+        }
+        .aqua{
+            background-color: rgb(7, 207, 207);
+        }
+        .green{
+            background-color: rgb(5, 180, 107);
+        }
+        
+        .lightgreen{
+            background-color: lightgreen;
+        }
+        /* ------------------------------------- */
+
+        /* @-----MOSTLY FLUID------*/
+
+        /* --most like column drop(vertical), here margin adds on both corners, only 2-3 break-point */ 
+        /* The mostly fluid pattern consists primarily of a fluid grid. 
+        On large or medium screens, it usually remains the same size, simply adjusting the margins on wider screens.
+        On smaller screens, the fluid grid causes the main content to reflow, while columns are stacked vertically. 
+        One major advantage of this pattern is that it usually only requires one breakpoint between small screens and large screens.*/
+
+        /* @media screen and (min-width:450px){
+            .lightblue, .aqua, .green, .lightgreen{
+                width: 50%;
+            }
+        }
+        @media screen and (min-width:550px) {
+            .darkblue{
+                width: 60%;
+            }
+            .lightblue{
+                width: 40%;
+            }
+            .aqua, .green, .lightgreen{
+                width: 33.33333%;
+            }
+        }
+        @media screen and (min-width:700px) {
+            .container{
+                width: 700px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        } */
+        /* ======================================================= */
+
+        /* @-----COLUMN DROP----- */
+
+        /* --2 break-point */
+        /* Choosing breakpoints for this layout pattern is dependent on content & changes for each design. */
+
+        /* @media screen and (min-width:450px) {
+            .darkblue{
+                width: 25%;
+                height: 200px;
+            }
+            .lightblue{
+                width: 75%;
+                height: 200px;
+            }
+        }
+        @media screen and (min-width:550px) {
+            .darkblue{
+                background-color: darkblue;
+                width: 25%;
+            }
+            .lightblue{
+                width: 50%;
+            }
+            .aqua{
+                width: 25%;
+            }
+        } */
+        /* ========================================================= */
+
+        /* @-----LAYOUT SHIFTER----- */
+
+        /* --more responsive with multiple break-points */
+        /* Key to this layout is the way content moves about, instead of reflowing & 
+        dropping below other columns. Due to the significant differences bw each major 
+        breakpoint, it is more complex to maintain & likely involves changes within 
+        elements, not just overall content layout. */ 
+
+        /* @media screen and (min-width:500px) {
+            .darkblue{
+                width: 50%;
+            }
+            #container2{
+                width: 50%;
+            }
+        }
+        @media screen and (min-width:600px) {
+            .darkblue {
+                width: 25%;
+                order: 1;
+            }
+            .green{
+                width: 25%;
+                order: -1;
+            }
+        }*/
+        /* ========================================================== */
+
+        /* @-----OFF CANVAS----- */
+        
+        /* use for navigation/menu bar, for bigger screen */
+        /* Rather than stacking content vertically, the off canvas pattern places 
+        less frequently used content—perhaps navigation or app menus—off screen, 
+        only showing it when the screen size is large enough, and on smaller screens, 
+        content is only a click away. */
+
+        @media screen and (min-width:600px) {
+            nav{
+                position: relative;
+                transform: translate(0, 0);
+            }
+            body {
+                display: flex;
+                flex-flow: row nowrap;
+            }
+            main{
+                width: auto;
+                flex-grow: 1;
+            }
+        }
+        /* ====================================================== */
+        nav {
+            width: 300px;
+            height: 100%;
+            position: absolute;
+            transform: translate(-300px, 0);
+            transition: transform 0.3s ease;
+        }
+        nav.open {
+            transform: translate(0,0);
+        }
+        /* ============================================= */
+    </style>
+</head>
+
+<body>
+    <!-- @-----"mostly fluid/ column drop"----- -->
+    <!-- <div class="container">
+        <div class="box darkblue"></div>
+        <div class="box lightblue"></div>
+        <div class="box aqua"></div>
+        <div class="box green"></div>
+        <div class="box lightgreen"></div>
+    </div>  -->
+    <!-- ------------------------ -->
+
+    <!-- @------"layout shifter"----- -->
+    <!-- <div class="container">
+        <div class="box darkblue"></div>
+        <div class="container" id="container2">
+            <div class="box lightblue"></div>
+            <div class="box aqua"></div>
+        </div>
+        <div class="box green"></div>
+    </div> -->
+    <!-- ----------------------- -->
+
+    <!-- @-----"off canvas"----- -->
+    <nav id="drawer" class="darkblue"></nav>
+    <main class="lightblue"></main>
+    <!-- ------------------------ -->
+</body>
+</html>

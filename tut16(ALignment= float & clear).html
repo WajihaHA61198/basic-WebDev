@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+
+    <!-- float & clear  -->
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            font-family: 'Ubuntu', sans-serif;
+            background-color: rgb(248, 221, 248);
+        }
+       /* --all 4 para are under single div container  */
+        .container{
+            width: 900px; 
+            border: 3px solid rgb(199, 161, 199);
+            margin: 33px auto ; 
+            background-color: rgb(106, 138, 179);
+        }
+        /* --implement on 4 each individually */
+        .items{   /*  for all 4 */
+            border: 5px solid rgb(76, 173, 84); 
+            margin: 10px;
+            padding: 12px 3px; 
+            background: #d6fdde;
+        }
+
+        #fruits{
+            float: left; 
+            width: 45%;
+        }
+        #Computer{
+            float: right;
+            width: 45%;
+        }
+        #Stationary{
+            /* float: left;   */
+            /* --if foloat:left remove then it overlap with above  */
+            clear: right;  /*--clear property controls flow next to floated elements. */
+            width: 98%;
+        }
+        /* --text alignment  */
+        p,h3{
+         /* text-align: right;
+            text-align: left;
+            text-align: center; */
+            text-align: justify;
+        }
+        h1{
+            margin:auto;
+            width: 455px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Welcome to Align lesson</h1>
+        <!-- 1  -->
+        <div id="fruits" class="items">
+            <h3>Fruits</h3>
+            <p id="fruitspara" class="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex placeat libero,
+                 eius maiores quos in veritatis commodi fugit, vel perferendis fugiat. Perspiciatis animi culpa nobis nulla
+                repudiandae suscipit consectetur expedita? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea nihil
+                id dolores placeat nesciunt, minima repellat eaque, ab sed repellendus ullam corporis cum dolorem accusantium 
+                eligendi sapiente mollitia optio! Maxime numquam at repellendus veniam tempore voluptatibus, nemo eligendi facere recusandae!</p> 
+        </div>
+        <!-- 2  -->
+        <div id="Computer" class="items">
+            <h3>Computer</h3>
+            <p id="Computerpara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, dolores? 
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti, quasi itaque praesentium ipsa commodi 
+                tenetur atque ad laudantium possimus Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit consectetur 
+                pariatur aliquid est ipsam, ullam id ad voluptas veniam incidunt, fugit quia excepturi! Dicta maxime modi error! 
+                Repudiandae pariatur, laudantium repellat voluptatem veritatis, accusantium numquam, suscipit assumenda ab dolore explicabo!</p> 
+        </div>
+        <!-- 3  -->
+        <div id="Stationary" class="items">
+            <h3>Stationary</h3>
+            <p id=Stationaryspara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, dolores? 
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti, quasi itaque praesentium ipsa commodi
+                tenetur atque ad laudantium possimus architecto.</p> 
+        </div>
+        <!-- 4 -->
+        <div id="Glasses" class="items">
+            <h3>Glasses</h3>
+            <p id=Glassespara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, dolores? 
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti, quasi itaque praesentium ipsa commodi
+                tenetur atque ad laudantium possimus architecto.</p> 
+        </div>
+    </div>
+</body>
+</html>

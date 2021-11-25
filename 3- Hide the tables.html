@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+
+    <!--responsivness, we could apply *Hidden columns, *No more tabls, *contained tables-->
+    <style>
+        /* --scroll horizontal-- */
+        div.contained_table {
+            width: 100%;
+            overflow-x: auto;
+        }
+        body{
+            margin: 2em;
+        }
+        /* --Hide Table-- */
+        @media screen and (max-width:480px) {
+        .LongName {
+            display: none;
+        }
+        .inning {
+            display: none;
+        }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contained_table">
+    <table>
+        <tr>
+            <td>
+                <span class="shortName">Team</span>
+                <span class="LongName">Team</span>
+            </td>
+    
+            <td class="inning">1st</td>
+            <td class="inning">2nd</td>
+            <td class="inning">3rd</td>
+            <td class="inning">4th</td>
+            <td class="inning">5th</td>
+            <td class="inning">6th</td>
+            <td class="inning">7th</td>
+            <td class="inning">8th</td>
+            <td class="inning">9th</td>
+            <td class="final">Final</td>   
+        </tr>
+        <!--  -->
+        <tr>
+            <td>
+                <span class="shortName">TOR</span>
+                <span class="LongName">Toronto Blue Jays</span>
+            </td>
+    
+            <td class="inning">0</td>
+            <td class="inning">0</td>
+            <td class="inning">0</td>
+            <td class="inning">4</td>
+            <td class="inning">0</td>
+            <td class="inning">1</td>
+            <td class="inning">0</td>
+            <td class="inning">0</td>
+            <td class="inning">0</td>
+            <td class="final">5</td>   
+        </tr>
+        <!--  -->
+        <tr>
+            <td>
+                <span class="shortName">SF</span>
+                <span class="LongName">San Fransisco</span>
+            </td>
+
+            <td class="inning">1</td>
+            <td class="inning">0</td>
+            <td class="inning">0</td>
+            <td class="inning">2</td>
+            <td class="inning">0</td>
+            <td class="inning">1</td>
+            <td class="inning">0</td>
+            <td class="inning">0</td>
+            <td class="inning">0</td>
+            <td class="final">4</td>  
+        </tr>
+        <!--  -->
+    </table>
+    </div>
+</body>
+</html>

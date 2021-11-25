@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation bar</title>
+
+    <style>
+        body{
+            background-color: #dad6e7;
+        }
+        .navbar{
+            background-color: #564444;
+            border-radius: 30px;
+        }
+        .navbar li{
+            float: left; 
+            list-style: none; 
+            /*bg color is not showing b/c when we float it float from it's parent*/
+            padding: 7px 8px; 
+            /*--space from all 4 side*/
+            margin: 13px 15px;
+        }
+        /* --- !important --- */
+        .navbar ul{    /*--Important, else it remove the whole text bar*/
+           overflow: auto; /*color appear*/  
+        }
+        .navbar li a{
+            padding: 8px 5px; /* li's padding*/
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .navbar li a:hover{
+            color: rgb(169, 174, 201);
+        }
+        /* ------------ */
+        .search{
+            float: right; 
+            padding: 15px 10px;
+            font-size: 17px;
+            margin-right: 60px;
+        }
+        .navbar input{
+            border: 2px solid black;
+            border-radius: 10px;
+            height: 30px;
+            padding-right: 30px;
+            border-style: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar"> 
+            <ul>
+                <li> <a href="a">Name</a> </li>
+                <li> <a href="a">About</a> </li>
+                <li> <a href="a">Subject</a> </li>
+                <li> <a href="a">Class</a> </li>
+                <!-- search box -->
+                <div class="search">
+                    <input type="search" name="mySearching" placeholder="Search this website"> 
+                </div>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>

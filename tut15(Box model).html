@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+
+    <style>
+        /* universal selector  */
+        * {
+            box-sizing: border-box;/*include padding & border in element's total width & height. */
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            background-color: #ebe2ec;
+        }
+
+        .container{
+          background-color: #f600ff1f ;
+          border: 3px solid rgba(25, 0, 255, 0.719);
+          padding: 34px;    
+          margin: 34px;     
+          /* --padding= inside, margin= outside--  */
+
+          /* @---set padding/margin for - trbl--- */
+
+          /*padding-left: 14px;
+            padding-top: 50px;
+            padding-right: 10px;
+            padding-bottom: 10px;*/
+
+          /*margin-left: 14px;
+            margin-top: 50px;
+            marging-right: 10px;
+            margin-bottom: 10px;*/
+
+          /* padding: 20px 10px 5px 7px;  padding/margin for trbl  */
+
+          /* padding: 23px 19px; {y(top/bottom), x(left/right)}  */
+          /* margin: 23px 19px;*/
+          border-radius: 10px;
+          width: 180px ;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h3>1st heading</h3>
+        <p id="first"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias, officiis.</p>
+    </div>
+
+    <div class="container">
+        <h3>2nd heading</h3>
+        <p id="second"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias, officiis.</p>
+    </div>
+
+    <div class="container">
+        <h3>3rd heading</h3>
+        <p id="third"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias, officiis.</p>
+    </div>
+</body>
+</html>

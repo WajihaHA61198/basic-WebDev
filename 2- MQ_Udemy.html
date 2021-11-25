@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Media Queries</title>
+
+    <!-- this is for responsive designs -->
+    <!-- it made possible to define dfrnt style rules for dfrnt media types -->
+    <style>
+        .box{
+            font-size: 72px;
+            text-align: center;
+            color: white;
+            display: none;  /* hide */
+        }
+        /* 0-400 */
+        @media only screen and (max-width:400px)
+        {
+            #box-1{
+                display: block;
+                background-color: cyan;
+            }
+        }
+        /* 300-600 */
+        @media only screen and (min-width: 300px) and (max-width:600px) 
+        {
+            #box-2{
+                display: block;
+                background-color: blueviolet;
+            }
+        }
+        /* 600-ownwards */
+        @media (min-width: 600px) 
+        {
+            #box-3{
+                display: block;
+                background-color: yellow;
+            }
+        }
+        /* 800-onwards */
+        @media (min-width: 960px)  
+        {
+            #box-4{
+                display: block;
+                background-color: green;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box" id="box-1">AA</div>
+    <div class="box" id="box-2">BB</div>
+    <div class="box" id="box-3">CC</div>
+    <div class="box" id="box-4">DD</div>
+</body>
+</html>

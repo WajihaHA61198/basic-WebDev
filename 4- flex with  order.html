@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexing with order</title>
+
+    <!-- @----- ORDER ----- -->
+    <style>
+        .container{
+            display: flex;   /* Otherwise shown in html sequence not ORDER wise*/
+            flex-wrap: wrap;  
+        }
+        .box{
+            height: 100px;
+        }
+
+        header{
+            width: 100%;
+            background-color: limegreen;
+            order: 0;
+        }
+        .red{
+            width: 80%;
+            background-color: red;
+            order: 1;
+        }
+        .darkgreen{
+            width: 20%;
+            background-color: darkgreen;
+            order: 2;
+        }
+        .lightgreen{
+            width: 25%;
+            background-color: lightgreen;
+            order: 5;
+        }
+        .orange{
+            width: 20%;
+            background-color: orange;
+            order: 3;
+        }
+        .green{
+            width: 25%;
+            background-color: greenyellow;
+            order: 6;
+        }
+        .blue{
+            width: 80%;
+            background-color: blue;
+            order: 4;
+        }
+        .aqua{
+            width: 50%;
+            background-color: aqua;
+            order: 7;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header class="box lime"></header>
+
+        <div class="box darkgreen"></div>
+        <div class="box lightgreen"></div>
+        <div class="box orange"></div>
+        <div class="box green"></div>
+        <div class="box red"></div>
+        <div class="box blue"></div>
+        <div class="box aqua"></div>
+    </div>
+</body>
+</html>
