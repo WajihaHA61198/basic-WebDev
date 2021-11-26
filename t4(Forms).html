@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <h2>HTML Form</h2>
+    <form action="backend.php">
+        <!-- label-> for when we point on Name it pop on text area  -->
+        <!-- for = id value -->
+        <label for="name"> Name </label>    
+        <div>
+             <input type="text" , name="myName", id="name">
+        </div>
+        <br>
+
+        <label for="myRoll"> Roll no# </label>
+        <div>
+             <input type="text" , name="myRoll", id="myRoll">
+        </div>
+        <br>
+
+        <label for="myEmail"> Email </label>
+        <div>
+            <input type="email" name="myEmail", id="myEmail">
+        </div>
+        <br>
+
+        <div>
+            Date: <input type="date" name="myDate"> <br>
+        </div>
+        <br>
+
+        <div>
+            Date with Time: <input type="datetime-local" name="myDateTime-Local">
+        </div>
+        <br>
+
+        <div>
+            Bonus: <input type="number" name="myBonus"> <!-- only e for exponent power  -->
+        </div>
+        <br>
+
+        <label for="myCheck"> Are you eligible? </label>
+        <div>
+             <input type="checkbox" name="myCheck", id="myCheck" checked> 
+        </div>
+        <br>
+
+        <div class="radio">
+            <strong>Gender:</strong>  Male: <input type="radio" name="myGender"> Female: <input type="radio" name="myGender"> other:
+            <input type="radio" name="myGender">
+        </div>
+        <br>
+
+        <div>
+            Month: <input type="month" name="myMonth">
+        </div>
+        <br>
+
+        <div>
+            Week: <input type="week" name="myWeek">
+        </div>
+        <br>
+
+        <div>
+            URL: <input type="url" name="myUrl">
+        </div>
+        <br>
+        <!-- <input type="tel" name="" id=""> <br>  -->
+        <div>
+            search: <input type="search" name="mySearching">
+        </div>
+        <br>
+
+        <label for="myText"> Write about yourself: </label>
+        <div>
+           <br> <textarea name="myText", id="myText" cols="30" rows="10"></textarea>
+        </div>
+        <br>
+
+        <div>
+            <label for="myCar"> Car: </label>
+            <select name="myCar" id="car">
+                <option value="Choose" selected> Choose option..</option>
+                <option value="ind"> Indica</option>
+                <option value="swf"> Swift </option>
+            </select>
+        </div>
+        <br>
+
+        <div class="yes">
+            Button: <input type="button" value="yes">
+        </div>
+        <br>
+
+        <div>
+            Choose file: <input type="file" name="myFile" >
+        </div>
+        <br>
+
+        <label for="password"> Password </label>
+        <div>
+             <input type="password" name="password" id="password">
+        </div>
+        <br>
+
+        <div>
+            <input type="submit" , value=" Submit ">
+            <input type="reset", value=" Reset ">
+        </div>
+        <div class="toggle"
+            role="button"
+            aria-labelledby="muteLb1"
+            aria-pressed="false"></div>
+            <!-- .toggle[aria-pressed="true"]{
+                //transition
+            } -->
+    </form>
+</body>
+</html>

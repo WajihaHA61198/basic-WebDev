@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline & Block elements</title>
+</head>
+
+<body>
+    <!-- @-if occupy whole space-> BLOCK, @-get own space-> INLINE  -->
+    <!-- 1) p is BLOCK tag -->
+    <p style="border: 2px solid red;">This is 1st P</p> <p style="border: 2px solid blue;">This is 2nd P.</p> 
+    <hr><br>
+
+    <!-- 2) SPAN is INLINE tag -->
+    <span style="border: 2px solid red;">This is 1st span.</span> <span style="border: 2px solid blue;">This is 2nd span.</span> 
+    <!-- <p>This is P tag para.</p> <span>join with span para</span>  (not valid) -->
+    <hr><br>
+
+    <!-- 3) DIV is block tag -->
+    <div style="border: 2px solid red;">This is 1st div</div> <div style="border: 2px solid blue;">This is 2nd div.</div>
+    <hr><br> 
+
+    <!-- 4) STRONG is INLINE tag -->
+    <strong style="border: 2px solid red;">This is 1st strong</strong><strong style="border: 2px solid blue;">This is 2nd strong</strong>
+    <hr><br>
+    <!-- ---  -->
+
+    <!-- => div & p -->
+    <div style="border: 2px solid red;">This is 1st div</div> <p style="border: 2px solid blue;"> This is 2nd P.</p> 
+    <hr><br> 
+    <!-- ---  -->
+    
+    <!-- strong = occupy own space -->
+    <!-- => strong & p -->
+    <strong style="border: 2px solid red;">This is 1st strong</strong> <p style="border: 2px solid blue;">This is 2nd p</p> 
+    <hr><br>
+    <!-- => strong & span -->
+    <strong style="border: 2px solid red;">This is 1st strong</strong> <span style="border: 2px solid blue;">this is 2nd span</span>
+    <hr><br>
+    <!-- ---  -->
+
+    <!-- => strong & a -->
+    <strong style="border: 2px solid red;">This is 1st strong</strong> <a style="border: 2px solid blue;"> This is 2nd a</a> 
+    <hr><br>
+    <!-- --- -->
+
+    <!-- li, ul, em, div, img  -->
+    <!-- => img & a  -->
+    <img style="border: 2px solid red;">This is 1st img</img> <a style="border: 2px solid blue;"> This is 2nd a</a> 
+    <hr><br>
+    <!-- p/div/li/ul -> BLOCK  -->
+    <!-- span/strong/a/em/img -> INLINE -->
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibility and Z-Index Property In CSS</title>
+
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            border: 2px solid black;
+        }
+        /* @-----Z-INDEX----- */
+        /* --z-index only work for positions not for default(static), must assign position */
+        /* --positions: absolute, relative, fixed, sticky */
+        #box1 {
+            background-color: greenyellow;
+            position: relative;
+            top: 69px; 
+            z-index: 1; /* --whoever's value is greater appear on top */
+        }
+        /* @-----DISPLAY & VISIBILITY----- */
+        #box2 {
+            background-color: rebeccapurple;
+            /* 1--it's just hide the box, left vacant space */
+            /* visibility: hidden; */
+
+            /* 2--it's hide the box, & left NO space */
+            /* display: none; */
+
+            position: relative;
+            top: 34px;
+            z-index: 0;
+        }
+        #box3 {
+            background-color: blue;
+        }
+        #box4 {
+            background-color: lightcoral;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+</body>
+</html>

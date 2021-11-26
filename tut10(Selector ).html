@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS seelctor</title>
+    
+    <style>
+        h3{
+            color: royalblue;
+        }
+        /* Element selector  */
+        p{
+            border: 2px solid red;
+        }
+        /* #id, .class  */
+        #first{
+            color: red;
+        }
+        .bgblue{
+            color: yellow;
+            background-color: royalblue;
+        }
+        #pg{
+            color: teal;
+            font-size: large;
+            font-style: oblique;
+        }
+        /* group selector  */
+        footer,span{
+            background-color: tomato;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>CSS selector</h3>
+    <p id="first">This is basically a simple paragraph to demonstrate the css selector templates</p>
+    <!-- second and bgblue are two separate classes  -->
+    <p id=redElement class="second bgblue">This is another basically a simple paragraph to demonstrate the css selector templates</p>
+    <div>
+        <p id="pg"> This is yet another simple paragraph into div basically to demonstrate the css selector templates</p>
+        <span>This is span</span>
+    </div>
+    <footer>This is footer</footer>
+ </body>
+</html>
